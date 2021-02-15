@@ -4,6 +4,8 @@ import { getSortedPostsData } from "../lib/posts";
 import utilStyles from "../styles/utils.module.css";
 import NavBar from "../components/nav-bar";
 import List from "../components/list";
+import Image from "next/image";
+import clsx from "classnames";
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,13 +13,14 @@ export default function Home({ allPostsData }) {
       <NavBar />
       <Layout home>
         <Head>
-          <title>{siteTitle}</title>
+          <title>Haii! I'm Ankita Kulkarni ✨</title>
         </Head>
+
         <section className={utilStyles.headingSm}>
           <p>
-            Haii! I'm Ankita Kulkarni ✨ I'm a Tech Lead at Loblaw Digital. I
-            have been working in the industry for the past 7 years! I love
-            building, architecting and scaling web and mobile apps :)
+            I'm a Tech Lead at Loblaw Digital. I have been working in the
+            industry for the past 7 years! I love building, architecting and
+            scaling web and mobile apps :)
             <br />
             When I'm not behind the screen, I love trying wine from different
             regions 🍷 & making pour over coffee ☕

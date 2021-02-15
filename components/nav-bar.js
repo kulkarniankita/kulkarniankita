@@ -26,15 +26,10 @@ export default function NavBar({}) {
   const { theme, setTheme } = useTheme();
 
   return (
-    <nav
-      className={clsx(
-        styles.navbar,
-        "dark:bg-lightgrey dark:text-whitedarktheme"
-      )}
-    >
+    <nav className={clsx(styles.navbar, "dark:bg-lightgrey dark:text-white")}>
       <ul>
         <button
-          className="w-10 h-10 border-0 bg-white dark:text-gray-100 dark:bg-black outline-none mr-auto"
+          className="w-10 h-10 border-0 bg-white dark:text-white dark:bg-black outline-none mr-auto"
           aria-label="Toggle Dark Mode"
           type="button"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -55,7 +50,11 @@ export default function NavBar({}) {
         </button>
         {data.map(({ title, href }, idx) => (
           <li>
-            <Link key={`${idx}-${title}`} href={href}>
+            <Link
+              key={`${idx}-${title}`}
+              href={href}
+              class="font-medium text-indigo-600 hover:text-indigo-500"
+            >
               {title}
             </Link>
           </li>

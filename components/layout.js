@@ -3,19 +3,15 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import NavBar from "./nav-bar";
 import clsx from "classnames";
 
-const name = "Ankita Kulkarni";
+const name = "Haii! I'm Ankita Kulkarni ✨";
 export const siteTitle = "Ankita Kulkarni 💜";
 
 export default function Layout({ children, home, title }) {
   return (
     <div
-      className={clsx(
-        styles.container,
-        "dark:bg-lightgrey dark:text-whitedarktheme"
-      )}
+      className={clsx(styles.container, "dark:bg-lightgrey dark:text-white")}
     >
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -34,7 +30,7 @@ export default function Layout({ children, home, title }) {
       </Head>
 
       {home && (
-        <header className={styles.header}>
+        <header className={clsx(styles.header, "dark:text-white")}>
           <>
             <Image
               priority
@@ -44,11 +40,27 @@ export default function Layout({ children, home, title }) {
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1
+              className={clsx(
+                utilStyles.heading2Xl,
+                "block text-indigo-600 xl:inline"
+              )}
+            >
+              {name}
+            </h1>
           </>
         </header>
       )}
-      {title && <h1 className={utilStyles.heading2Xl}>{title}</h1>}
+      {title && (
+        <h1
+          className={clsx(
+            utilStyles.heading2Xl,
+            "block text-indigo-600 xl:inline"
+          )}
+        >
+          {title}
+        </h1>
+      )}
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

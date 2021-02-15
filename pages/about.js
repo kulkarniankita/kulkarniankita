@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import NavBar from "../components/nav-bar";
 import { getConfData } from "../lib/posts";
 import List from "../components/list";
+import clsx from "classnames";
 
 export default function About({ confData }) {
   return (
@@ -13,7 +14,7 @@ export default function About({ confData }) {
         <Head>
           <title>{siteTitle}</title>
         </Head>
-        <section className={utilStyles.headingSm}>
+        <section className={clsx(utilStyles.headingSm, "dark:text-white")}>
           <p>
             Haii! I'm Ankita Kulkarni ✨ I'm a Tech Lead at Loblaw Digital.
             Prior to that, I was a Solution Architect at Rangle.io and IBM,
