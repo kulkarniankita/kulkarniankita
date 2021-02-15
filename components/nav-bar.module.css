@@ -3,7 +3,6 @@
 .navbar {
   height: 70px;
   width: 100%;
-  background: white;
   color: var(--colors-text);
   position: fixed;
   top: 0;

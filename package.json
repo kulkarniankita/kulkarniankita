@@ -8,12 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/typography": "tailwindcss/typography",
     "autoprefixer": "^10.2.4",
     "classnames": "^2.2.6",
     "date-fns": "^2.17.0",
     "gray-matter": "^4.0.2",
     "next": "^10.0.0",
-    "postcss": "^8.2.5",
+    "next-themes": "^0.0.10",
+    "postcss": "^8.2.6",
+    "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "remark": "^13.0.0",

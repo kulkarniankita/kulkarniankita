@@ -4,13 +4,19 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import NavBar from "./nav-bar";
+import clsx from "classnames";
 
 const name = "Ankita Kulkarni";
 export const siteTitle = "Ankita Kulkarni 💜";
 
 export default function Layout({ children, home, title }) {
   return (
-    <div className={styles.container}>
+    <div
+      className={clsx(
+        styles.container,
+        "dark:bg-lightgrey dark:text-whitedarktheme"
+      )}
+    >
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
