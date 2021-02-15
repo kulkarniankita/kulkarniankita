@@ -1,0 +1,72 @@
+[
+  {
+    "title": "React Summit 2020",
+    "slides": "",
+    "link": "https://speakerdeck.com/kulkarniankita09/lessons-learned-architecting-react-apps",
+    "description": "10 consulting lessons architecting React Apps",
+    "date": "2020-09-15"
+  },
+  {
+    "title": "Angular Connect and FITC 2019",
+    "slides": "http://bit.ly/humanizingPRs",
+    "link": "https://youtu.be/WoYyFOXEFOI",
+    "description": "The Art of Humanizing Code Reviews",
+    "date": "2019-09-19"
+  },
+  {
+    "title": "Chain React 2019",
+    "slides": "http://bit.ly/rn-benchmark",
+    "link": "https://youtu.be/3LLQ5AshtNc",
+    "description": "Beyond the React Native Benchmarks",
+    "date": "2019-07-19"
+  },
+  {
+    "title": "React Europe 2019",
+    "slides": "http://bit.ly/a11y-mobile",
+    "link": "https://www.youtube.com/watch?v=X_3tnSwXLls",
+    "description": "Accessibility 360 - Web -> Mobile",
+    "date": "2019-05-24"
+  },
+  {
+    "title": "ScaleConf Colombia 2019",
+    "slides": "http://bit.ly/humanizingPRs",
+    "link": "http://bit.ly/humanizingPRs",
+    "description": "The Art of Humanizing Pull Requests",
+    "date": "2019-05-19"
+  },
+  {
+    "title": "React Amsterdam 2019",
+    "slides": "http://bit.ly/a11y-react-native",
+    "link": "https://youtu.be/FqKlsmoaxs0",
+    "description": "Make your React Native apps accessible",
+    "date": "2019-04-27"
+  },
+  {
+    "title": "App.js 2019",
+    "slides": "http://bit.ly/a11y-react-native",
+    "link": "https://youtu.be/S3DzcCrEGbc",
+    "description": "Make your React Native apps accessible",
+    "date": "2019-04-19"
+  },
+  {
+    "title": "Full Stack Toronto 2018",
+    "slides": "https://speakerdeck.com/kulkarniankita09/lets-fight-redux-side-effects-showdown",
+    "link": "https://bit.ly/2tRyJFx",
+    "description": "Let's Fight: Redux side effects showdown",
+    "date": "2019-11-19"
+  },
+  {
+    "title": "React Boston 2018",
+    "slides": "http://bit.ly/humanizingPRs",
+    "link": "https://www.youtube.com/watch?v=L6Mh2h5Tunw&t=1s",
+    "description": "The Art of Humanizing Pull Requests (PR’s)",
+    "date": "2018-10-19"
+  },
+  {
+    "title": "Rangle.io 2018 Lunch and Learn",
+    "slides": "https://speakerdeck.com/kulkarniankita09/being-agile-scrum-and-extreme-programming",
+    "link": "https://www.youtube.com/watch?v=lnvgQ9Ti9Hc",
+    "description": "Being Agile: Scrum and XP - how similar or different they are",
+    "date": "2018-05-19"
+  }
+]

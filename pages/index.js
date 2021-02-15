@@ -2,41 +2,35 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
-import Date from "../components/date";
+import NavBar from "../components/nav-bar";
+import List from "../components/list";
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Haii! I'm Ankita Kulkarni ☕️</p>
-      </section>
-      {/* Add this <section> tag below the existing <section> tag */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+    <>
+      <NavBar />
+      <Layout home>
+        <Head>
+          <title>{siteTitle}</title>
+        </Head>
+        <section className={utilStyles.headingSm}>
+          <p>
+            Haii! I'm Ankita Kulkarni ✨ I'm a Tech Lead at Loblaw Digital. I
+            have been working in the industry for the past 7 years! I love
+            building, architecting and scaling web and mobile apps :)
+            <br />
+            When I'm not behind the screen, I love trying wine from different
+            regions 🍷 & making pour over coffee ☕
+          </p>
+        </section>
+        <List data={allPostsData} link="/posts" heading="Latest blog posts" />
+      </Layout>
+    </>
   );
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getSortedPostsData().slice(0, 4);
   return {
     props: {
       allPostsData,

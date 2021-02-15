@@ -25,6 +25,12 @@
   line-height: 1.5;
 }
 
+.headingSm {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(75, 85, 99, 0.9);
+}
+
 .borderCircle {
   border-radius: 9999px;
 }
@@ -48,5 +54,5 @@
 }
 
 .lightText {
-  color: #666;
+  color: rgba(75, 85, 99, 0.9);
 }
