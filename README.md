@@ -45,4 +45,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-You can sponsor my work with [Github Sponsorships ↗.](https://github.com/sponsors/kulkarniankita)
+### You can sponsor my work with [Github Sponsorships ↗.](https://github.com/sponsors/kulkarniankita)
